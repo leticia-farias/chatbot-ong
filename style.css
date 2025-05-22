@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #fefefe;
+  color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    width: 100%; 
+    height: 100%;
+}
+
+section {
+    
+}
+
+#descricao {
+    width: 100%;
+}
+
+#chat-bot {
+    width: 640px;
+}
+
+h1, h2 {
+  color: #B85B2D;
+  font-family: "Sour Gummy", sans-serif;
+  
+}
+
+ul {
+  list-style-type: square;
+}
