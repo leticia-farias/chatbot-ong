@@ -1,53 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  padding: 20px;
   background-color: #fefefe;
   color: #333;
 }
 
+header, main {
+  padding: 20px;
+
+}
+
 header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  background-color: #B85B2D;
+  color: #fefefe;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  height: 100%;
+  align-items: center;
+}
+
+nav img {
+  height: 40%;
 }
 
 main {
-    display: flex;
-    width: 100%; 
-    height: 100%;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  background-color: #F6EDD9;
 }
 
 section {
-    
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 #descricao {
-    width: 100%;
+  width: 100%;
 }
 
 #chat-bot {
-    width: 640px;
+  height: 100%;
+  /* width: 400px; */
+  /* justify-content: end; */
 }
 
-h1, h2 {
-  color: #B85B2D;
+#chat-bot img {
+  width: 100%;
+  height: 100%;
+}
+
+.div-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+h1,
+h2 {
   font-family: "Sour Gummy", sans-serif;
-  
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+p, ul {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 ul {
   list-style-type: square;
+}
+
+@media (max-width: 664px) {
+    main {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
 }
